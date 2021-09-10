@@ -1,13 +1,3 @@
-port=3030
-
-# Database connection
-
-database_name=apinodejs
-database_host=localhost
-database_user=nodejsUser
-database_password=adminUserPass
-database_port=3306
-
 ### Database template ###
 
 CREATE  TABLE IF NOT EXISTS `employees` (
