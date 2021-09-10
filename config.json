@@ -2,8 +2,8 @@
     "port": 3030,
     "database": {
         "hostname": "localhost",
-        "user": "nodejsUser",
-        "password": "adminUserPass",
-        "name": "apinodejs"
+        "user": "root",
+        "password": "",
+        "name": "database"
     }
 }
