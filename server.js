@@ -1,12 +1,13 @@
 require("dotenv").config();
 const express = require('express');
 const bodyparser = require('body-parser');
+const config = require("./config.json");
 
 // Création de l'application express
 const app = express();
 
 // Définition du port de connexion au serveur
-const port = process.env.port || 5000;
+const port = config.port;
 
 // Analyser les requêtes de type content - application/x-www-form-urlencoded
 app.use(bodyparser.urlencoded({ extended: true }))

@@ -1,12 +1,15 @@
 'use strict';
 
 const mysql = require('mysql');
+const config = require('./../config.json');
+const database = config.database
+
 
 const dbConn = mysql.createConnection({
-    host: process.env.database_host,
-    user: process.env.database_user,
-    password: process.env.database_password,
-    database: process.env.database_name
+    host: database.hostname,
+    user: database.user,
+    password: database.password,
+    database: database.name
 });
 
 dbConn.connect(function(err) {

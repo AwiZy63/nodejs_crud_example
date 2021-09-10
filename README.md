@@ -11,8 +11,8 @@
 `cd nodejs_crud_example && npm i`
 
 - Configurer l'accès à votre base de données :
-  - Renommer le fichier '.env.example' en '.env' et faites les modifications nécessaires.
-  - Dans votre application de gestion SQL, injectez le modèle disponible dans le fichier .env dans une base de données.
+  - Faites les modifications nécessaires dans le fichier "config.json".
+  - Dans votre application de gestion SQL, injectez le modèle disponible dans le fichier "database_template.sql" dans une base de données.
 
 - Une fois tout cela effectué, vous pourrez lancer votre API en utilisant la commande :
 `npm start`
